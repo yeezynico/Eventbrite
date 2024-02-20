@@ -33,8 +33,16 @@
       <h5 class="card-header">Mes évènements</h5>
       <div class="card-body">
         <div class="row card-deck justify-content-center">
-         
-        
+         <% if @events %>
+        <% @events.each do |event| %>
+          <p>
+           <strong>Title:</strong>
+           <%= event.title %>
+          </p>
+         <%= link_to "Show event", event_path(event) %>
+        <% end %>
+        <% end %>
+
         </div>
       </div>
     </div>

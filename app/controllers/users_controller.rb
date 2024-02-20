@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1 or /users/1.json
   def show
     @user = current_user
-    @events = @user.events
+    @events = @user.administrated_events
   end
 
   # GET /users/new
@@ -71,8 +71,5 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name, :description, :email, :encrypted_password)
     end
 
-    def authenticate_user!
-      
-    end
 
 end
