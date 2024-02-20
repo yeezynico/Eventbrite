@@ -1,0 +1,8 @@
+Salut  <%= @admin.first_name %> !
+==========================================================
+
+Un nouveau participant vient de se rajouter pour <%= @attendance.event.title %> qui aura lieu le <%= @attendance.event.start_date.strftime("%d/%m/%Y") %>.
+
+Le nouveau participant est <%= @attendance.user.first_name %>.
+
+À très vite sur Eventbrite !

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Salut  <%= @admin.first_name %> !</h1>
+    <p>
+     Un nouveau participant vient de se rajouter pour <%= @attendance.event.title %> qui aura lieu le <%= @attendance.event.start_date.strftime("%d/%m/%Y") %>.
+    </p>
+    <p>
+      Le nouveau participant est <%= @attendance.user.first_name %>.
+    </p>
+    <p> À très vite sur Eventbrite ! </p>
+  </body>
+</html>
