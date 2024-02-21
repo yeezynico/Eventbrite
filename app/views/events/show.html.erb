@@ -8,3 +8,5 @@
 
   <%= button_to "Destroy this event", @event, method: :delete %>
 </div>
+
+<%= button_to "Passer commande (NEXT GEN)", checkout_create_path(total: @event.price, event_id: @event.id), class: "btn btn-primary", data: {turbo: false} %>

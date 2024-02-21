@@ -8,6 +8,8 @@ class AttendancesController < ApplicationController
 
   # GET /attendances/1 or /attendances/1.json
   def show
+    @event = Event.find(params[:id])
+    @montant_a_payer = 100 # Remplacez ceci par le montant approprié
   end
 
   # GET /attendances/new
