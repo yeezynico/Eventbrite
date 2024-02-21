@@ -24,10 +24,10 @@
 <div class="collapse" id="navbarToggleExternalContent">
   <div class="bg-dark p-4">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" <%= link_to "Home", root_path %></a>   <!-- events#index-->
+    <button type="button" class="btn btn-secondary"><a class="nav-link active text-light" aria-current="page" <%= link_to "Home", root_path %></a></button>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<%= new_event_path %>">Create</a>   <!-- events#new-->
+    <button type="button" class="btn btn-secondary"><a class="nav-link text-light" href="<%= new_event_path %>">Create</a></button>   <!-- events#new-->
     </li>
     <li class="nav-item">
       <a class="nav-link" href="<%= users_path %>">Users</a>

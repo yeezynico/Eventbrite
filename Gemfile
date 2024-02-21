@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 gem "devise"
+gem "table_print"
+gem "faker"
+gem 'dotenv-rails'
+gem "stripe"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
@@ -67,11 +71,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "table_print"
-
-gem "faker"
-
-gem 'dotenv-rails'
 
 group :development do
   gem "better_errors"
